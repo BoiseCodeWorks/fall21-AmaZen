@@ -1,6 +1,5 @@
 using System;
 using System.Collections.Generic;
-using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace AmaZen.Controllers
@@ -10,7 +9,6 @@ namespace AmaZen.Controllers
   public class ProductsController : ControllerBase
   {
     [HttpGet]
-    [Authorize]
     public ActionResult<List<string>> Get()
     {
       try
